@@ -1,4 +1,4 @@
-window.alert("Up and running!");
+window.alert("JS up and running!");
 var cardOne = "King";
 var cardTwo = "King";
 var cardThree = "Queen";
