@@ -1,5 +1,3 @@
-
-
 body{
 	text-align: center;
 	text-transform: uppercase;
@@ -78,15 +76,15 @@ a:hover{
 }
 
 .clearfix:after {
-visibility: hidden;
-display: block;
-content: " ";
-clear: both;
-height: 0;
-font-size: 0;
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
 }
 
 .name{
-	color: #F15B31
+	color: #F15B31;
 	font-weight: 700;
 }
