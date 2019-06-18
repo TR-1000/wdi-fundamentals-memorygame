@@ -23,12 +23,17 @@ var cards = [
 ];
 var usedCards = [];
 var cardsInPlay = [];
+var matches = 0
 
 function checkForMatch() {
 	if (cardsInPlay.length === 2) {
 		if (cardsInPlay[0] === cardsInPlay[1]) {
 			alert("You found a match!");
 			cardsInPlay = [];
+			matches++;
+			if (matches===2) {
+				clearBoard();
+			}
 		}
 		else {
 			alert("Sorry, try again.");
@@ -64,18 +69,19 @@ function clearBoard() {
 	gameBoard.innerHTML = "";
 	cardsInPlay = [];
 	usedCards = [];
+	matches = 0
 	randomizeBoard()
 	createBoard();
 };
 
 function randomizeBoard() {
-  while (usedCards.length < 4 === true ) {
-  var i = Math.floor(Math.random() * 4);
-  if (usedCards.includes(cards[i]) === false) {
-    usedCards.push(cards[i]);
-  console.log(usedCards);  
+	while (usedCards.length < 4 === true ) {
+  		var i = Math.floor(Math.random() * 4);
+  		if (usedCards.includes(cards[i]) === false) {
+    	usedCards.push(cards[i]);
+  		console.log(usedCards);  
+  		}
   	}
-  }
 };
-randomizeBoard()
+randomizeBoard();
 createBoard();

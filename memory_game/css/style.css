@@ -2,7 +2,6 @@ body{
 	text-align: center;
 	text-transform: uppercase;
 	margin: 0;
-
 }
 
 h1{
@@ -37,13 +36,11 @@ nav{
 	background-color: #00A6B3;
 	color: #FFFFFF;
 	padding: 20px 0;
-
 }
 
 main{
 	width: 850px
 	margin: 35px auto;
-
 }
 
 img{
